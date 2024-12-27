@@ -1,0 +1,25 @@
+{
+  "name": "backend-practice",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "exports": {
+    "./*": "./*.js"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV= production nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.9.2",
+    "nodemon": "^3.1.9"
+  }
+}

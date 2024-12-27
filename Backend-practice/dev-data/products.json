@@ -1,0 +1,303 @@
+[
+      {
+        "id": 1,
+        "name": "Laptop",
+        "category": "Electronics",
+        "price": 1200,
+        "quantity": 10,
+        "brand": "Dell",
+        "rating": 4.5,
+        "warranty": 2
+      },
+      {
+        "id": 2,
+        "name": "Smartphone",
+        "category": "Electronics",
+        "price": 800,
+        "quantity": 20,
+        "brand": "Samsung",
+        "rating": 4.7,
+        "warranty": 1
+      },
+      {
+        "id": 3,
+        "name": "Headphones",
+        "category": "Accessories",
+        "price": 100,
+        "quantity": 50,
+        "brand": "Sony",
+        "rating": 4.3,
+        "warranty": 2
+      },
+      {
+        "id": 4,
+        "name": "Keyboard",
+        "category": "Accessories",
+        "price": 50,
+        "quantity": 30,
+        "brand": "Logitech",
+        "rating": 4.2,
+        "warranty": 1
+      },
+      {
+        "id": 5,
+        "name": "Chair",
+        "category": "Furniture",
+        "price": 150,
+        "quantity": 5,
+        "brand": "Ikea",
+        "rating": 4.6,
+        "warranty": 3
+      },
+      {
+        "id": 6,
+        "name": "Desk",
+        "category": "Furniture",
+        "price": 300,
+        "quantity": 8,
+        "brand": "Ikea",
+        "rating": 4.4,
+        "warranty": 3
+      },
+      {
+        "id": 7,
+        "name": "Monitor",
+        "category": "Electronics",
+        "price": 200,
+        "quantity": 15,
+        "brand": "LG",
+        "rating": 4.5,
+        "warranty": 2
+      },
+      {
+        "id": 8,
+        "name": "Tablet",
+        "category": "Electronics",
+        "price": 600,
+        "quantity": 12,
+        "brand": "Apple",
+        "rating": 4.8,
+        "warranty": 1
+      },
+      {
+        "id": 9,
+        "name": "Mouse",
+        "category": "Accessories",
+        "price": 25,
+        "quantity": 60,
+        "brand": "Logitech",
+        "rating": 4.4,
+        "warranty": 1
+      },
+      {
+        "id": 10,
+        "name": "Bookshelf",
+        "category": "Furniture",
+        "price": 250,
+        "quantity": 3,
+        "brand": "Ikea",
+        "rating": 4.5,
+        "warranty": 5
+      },
+      {
+        "id": 11,
+        "name": "Gaming Console",
+        "category": "Electronics",
+        "price": 500,
+        "quantity": 7,
+        "brand": "Sony",
+        "rating": 4.7,
+        "warranty": 1
+      },
+      {
+        "id": 12,
+        "name": "Smartwatch",
+        "category": "Electronics",
+        "price": 200,
+        "quantity": 25,
+        "brand": "Apple",
+        "rating": 4.6,
+        "warranty": 1
+      },
+      {
+        "id": 13,
+        "name": "Speakers",
+        "category": "Accessories",
+        "price": 150,
+        "quantity": 40,
+        "brand": "JBL",
+        "rating": 4.3,
+        "warranty": 1
+      },
+      {
+        "id": 14,
+        "name": "Printer",
+        "category": "Electronics",
+        "price": 350,
+        "quantity": 10,
+        "brand": "HP",
+        "rating": 4.4,
+        "warranty": 2
+      },
+      {
+        "id": 15,
+        "name": "Coffee Table",
+        "category": "Furniture",
+        "price": 120,
+        "quantity": 6,
+        "brand": "Ikea",
+        "rating": 4.5,
+        "warranty": 3
+      },
+      {
+        "id": 16,
+        "name": "Water Bottle",
+        "category": "Accessories",
+        "price": 15,
+        "quantity": 100,
+        "brand": "CamelBak",
+        "rating": 4.2,
+        "warranty": 2
+      },
+      {
+        "id": 17,
+        "name": "Notebook",
+        "category": "Stationery",
+        "price": 5,
+        "quantity": 200,
+        "brand": "Moleskine",
+        "rating": 4.7,
+        "warranty": 0
+      },
+      {
+        "id": 18,
+        "name": "Pen",
+        "category": "Stationery",
+        "price": 2,
+        "quantity": 500,
+        "brand": "Parker",
+        "rating": 4.6,
+        "warranty": 0
+      },
+      {
+        "id": 19,
+        "name": "Eraser",
+        "category": "Stationery",
+        "price": 1,
+        "quantity": 300,
+        "brand": "Staedtler",
+        "rating": 4.3,
+        "warranty": 0
+      },
+      {
+        "id": 20,
+        "name": "Backpack",
+        "category": "Accessories",
+        "price": 70,
+        "quantity": 20,
+        "brand": "North Face",
+        "rating": 4.8,
+        "warranty": 2
+      },
+      {
+        "id": 21,
+        "name": "Blender",
+        "category": "Appliances",
+        "price": 80,
+        "quantity": 10,
+        "brand": "Oster",
+        "rating": 4.4,
+        "warranty": 1
+      },
+      {
+        "id": 22,
+        "name": "Microwave",
+        "category": "Appliances",
+        "price": 150,
+        "quantity": 8,
+        "brand": "Panasonic",
+        "rating": 4.6,
+        "warranty": 2
+      },
+      {
+        "id": 23,
+        "name": "Refrigerator",
+        "category": "Appliances",
+        "price": 1000,
+        "quantity": 5,
+        "brand": "Whirlpool",
+        "rating": 4.7,
+        "warranty": 5
+      },
+      {
+        "id": 24,
+        "name": "Washing Machine",
+        "category": "Appliances",
+        "price": 1200,
+        "quantity": 4,
+        "brand": "LG",
+        "rating": 4.8,
+        "warranty": 5
+      },
+      {
+        "id": 25,
+        "name": "Dishwasher",
+        "category": "Appliances",
+        "price": 900,
+        "quantity": 3,
+        "brand": "Bosch",
+        "rating": 4.7,
+        "warranty": 5
+      },
+      {
+        "id": 26,
+        "name": "Toaster",
+        "category": "Appliances",
+        "price": 40,
+        "quantity": 15,
+        "brand": "Cuisinart",
+        "rating": 4.3,
+        "warranty": 1
+      },
+      {
+        "id": 27,
+        "name": "Mixer",
+        "category": "Appliances",
+        "price": 120,
+        "quantity": 7,
+        "brand": "KitchenAid",
+        "rating": 4.6,
+        "warranty": 3
+      },
+      {
+        "id": 28,
+        "name": "Sofa",
+        "category": "Furniture",
+        "price": 700,
+        "quantity": 2,
+        "brand": "Ashley",
+        "rating": 4.5,
+        "warranty": 5
+      },
+      {
+        "id": 29,
+        "name": "Bed",
+        "category": "Furniture",
+        "price": 1500,
+        "quantity": 1,
+        "brand": "Ikea",
+        "rating": 4.8,
+        "warranty": 10
+      },
+      {
+        "id": 30,
+        "name": "Wardrobe",
+        "category": "Furniture",
+        "price": 800,
+        "quantity": 3,
+        "brand": "Ikea",
+        "rating": 4.6,
+        "warranty": 5
+      }
+    ]
+  
