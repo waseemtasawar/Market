@@ -6,6 +6,8 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [newProduct, setNewProduct] = useState({
     name: "",
@@ -17,21 +19,30 @@ const ProductList = () => {
     warranty: "",
   });
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get("/api/products");
-        setProducts(response.data?.data?.products || []);
-        setLoading(false);
-      } catch (err) {
-        console.error("API Error:", err);
-        setError(err.message);
-        setLoading(false);
-      }
-    };
+  const fetchProducts = async (page) => {
+    try {
+      setLoading(true);
+      const response = await axios.get(`/api/products?page=${page}&limit=8`);
+      setProducts(response.data?.data?.products || []);
+      setCurrentPage(response.data.currentPage);
+      setTotalPages(response.data.totalPages);
+      setLoading(false);
+    } catch (err) {
+      console.error("API Error:", err);
+      setError(err.message);
+      setLoading(false);
+    }
+  };
 
-    fetchProducts();
-  }, []);
+  useEffect(() => {
+    fetchProducts(currentPage); // Fetch products for the current page
+  }, [currentPage]);
+
+  const handlePageChange = (newPage) => {
+    if (newPage > 0 && newPage <= totalPages) {
+      setCurrentPage(newPage); // Update the current page
+    }
+  };
 
   const handleAddProduct = async () => {
     try {
@@ -81,7 +92,6 @@ const ProductList = () => {
 
       <div style={styles.gridContainer}>
         {products.map((product, index) => {
-          // Generate a slug for the product
           const slug = `${product.name.toLowerCase().replace(/\s+/g, "-")}-${
             product.id || product._id
           }`;
@@ -97,6 +107,27 @@ const ProductList = () => {
             </Link>
           );
         })}
+      </div>
+
+      {/* Pagination Controls */}
+      <div style={styles.paginationContainer}>
+        <button
+          style={styles.paginationButton}
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
+          Previous
+        </button>
+        <span style={styles.paginationInfo}>
+          Page {currentPage} of {totalPages}
+        </span>
+        <button
+          style={styles.paginationButton}
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+        >
+          Next
+        </button>
       </div>
 
       {/* Add New Product Modal */}
@@ -312,6 +343,25 @@ const styles = {
   errorText: {
     fontSize: "1.5rem",
     color: "red",
+  },
+  paginationContainer: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "1.5rem",
+  },
+  paginationButton: {
+    backgroundColor: "#007BFF",
+    color: "white",
+    padding: "0.8rem 1.5rem",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+    margin: "0 0.5rem",
+  },
+  paginationInfo: {
+    fontSize: "1.2rem",
+    color: "#333",
   },
 };
 
